@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "image": "people/player-1.png",
+        "comment": "here lots of variation in design. i really love it. ",
+        "ratings": "8/10"
+    },
+    {
+        "id": "2",
+        "image": "people/player-2.png",
+        "comment": "just awesome with quality and design.  ",
+        "ratings": "9/10"
+    },
+    {
+        "id": "3",
+        "image": "people/player-3.png",
+        "comment": " good quality. should have more design. ",
+        "ratings": "7/10"
+    },
+    {
+        "id": "4",
+        "image": "people/player-4.png",
+        "comment": "just glorious and fantastic in design. i have bought two. one is for me and another is for my hubby. ",
+        "ratings": "10/10"
+    },
+    {
+        "id": "5",
+        "image": "people/player-5.png",
+        "comment": "just awesome in quality but i didnt found my desired ..",
+        "ratings": "7/10"
+    },
+    {
+        "id": "6",
+        "image": "people/player-6.png",
+        "comment": "no compromise with quality and looks. just awesome ",
+        "ratings": "9/10"
+    }
+]

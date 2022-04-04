@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import useReviews from '../../hooks/theReviews';
 import './Home.css'
 
 const Home = () => {
 
+    const [reviews, setReviews] = useReviews([])
     const [image, setImage] = useState([]);
     useEffect(() => {
         fetch('home.json')
@@ -39,7 +41,7 @@ const Home = () => {
             </div>
 
             <div className='text-center font-bold text-3xl'>
-                <h2>Customers Reviews()</h2>
+                <h2>Customers Reviews({reviews.length})</h2>
             </div>
         </div>
     );
