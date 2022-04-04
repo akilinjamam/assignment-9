@@ -1,4 +1,8 @@
+import { faStar } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import './AllReviews.css'
+
 
 const AllReviews = ({ image, name, comment, ratings }) => {
     return (
@@ -9,6 +13,15 @@ const AllReviews = ({ image, name, comment, ratings }) => {
                     <p>Name: {name}</p>
                     <p title={comment}>Comments:  {comment.length > 60 ? comment.slice(0, 60) + '...' : comment}</p>
                     <p>Ratings: {ratings}</p>
+                    <h6>{ratings == 1 ? <span><FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon></span> : <span></span>}</h6>
+
+                    <h6>{ratings == 2 ? <span><FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon> <FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon></span> : <span></span>}</h6>
+
+                    <h6>{ratings == 3 ? <span><FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon> <FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon> <FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon></span> : <span></span>}</h6>
+
+                    <h6>{ratings == 4 ? <span><FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon> <FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon> <FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon> <FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon></span> : <span></span>}</h6>
+
+                    <h6>{ratings == 5 ? <span><FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon><FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon><FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon><FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon><FontAwesomeIcon className='rating-star' icon={faStar}></FontAwesomeIcon></span> : <span></span>}</h6>
                 </div>
             </div>
         </div>
