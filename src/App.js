@@ -23,7 +23,7 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
-      <h2>hellow</h2>
+
     </div>
   );
 }
