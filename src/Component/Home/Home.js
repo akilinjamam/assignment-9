@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import useReviews from '../../hooks/theReviews';
+import ThreeReviews from '../ThreeReviews/ThreeReviews';
 import './Home.css'
 
 const Home = () => {
 
-    const [reviews, setReviews] = useReviews([])
+    const [reviews, setReviews] = useReviews([]);
+    const threeReviews = reviews.slice(0, 3)
     const [image, setImage] = useState([]);
     useEffect(() => {
         fetch('home.json')
@@ -40,8 +42,20 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='text-center font-bold text-3xl'>
-                <h2>Customers Reviews({reviews.length})</h2>
+            <div style={{ width: '80%', margin: 'auto' }}>
+                <h2 className='text-center font-bold text-3xl'>Customers Reviews({threeReviews.length})</h2>
+                <div className='flex justify-center'>
+                    {
+                        threeReviews.map(threeReviews => <ThreeReviews
+                            key={threeReviews.id}
+                            image={threeReviews.image}
+                            comment={threeReviews.comment}
+                            name={threeReviews.name}
+                            ratings={threeReviews.ratings}
+                        ></ThreeReviews>)
+                    }
+                </div>
+
             </div>
         </div>
     );
