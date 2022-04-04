@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useReviews from '../../hooks/theReviews';
 import ThreeReviews from '../ThreeReviews/ThreeReviews';
 import './Home.css'
@@ -57,6 +58,9 @@ const Home = () => {
                 </div>
 
             </div>
+            <p className='text-center bg-cyan-400 hover:bg-cyan-700 duration-700 ease-out rounded w-36 m-auto py-3 text-white '><button className='font-bold text-xl '> <Link to='/reviews'>All Reviews</Link> </button></p>
+
+            <br /><br /><br />
         </div>
     );
 };

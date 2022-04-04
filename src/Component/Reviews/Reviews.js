@@ -7,9 +7,9 @@ const Reviews = () => {
     const [reviews, setReviews] = useReviews([])
 
     return (
-        <div>
+        <div >
             <h2 className='text-center font-bold text-3xl'>All Reviews({reviews.length}) </h2>
-            <div>
+            <div className='grid grid-cols-3'>
                 {
                     reviews.map(theReviews => <AllReviews
                         key={theReviews.id}
