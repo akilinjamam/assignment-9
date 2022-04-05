@@ -44,10 +44,10 @@ const Dashboard = () => {
     ]
 
     return (
-        <div>
+        <div style={{ width: '80%', margin: 'auto' }} className='grid grid-cols-2 gap-6'>
             <div style={{ width: '550px' }} >
                 <h3 className='text-center font-bold text-blue-700 text-xl'>Month wish Sell</h3>
-                <LineChart width={530} height={270} data={data}
+                <LineChart width={520} height={260} data={data}
                     margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                     <CartesianGrid />
                     <XAxis dataKey="month" />
@@ -61,7 +61,7 @@ const Dashboard = () => {
 
             <div style={{ width: '550px' }}>
                 <h3 className='text-center font-bold text-blue-700 text-xl'>Investment vs revenue</h3>
-                <AreaChart width={530} height={270} data={data}
+                <AreaChart width={520} height={260} data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                     <defs>
                         <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -86,7 +86,7 @@ const Dashboard = () => {
             <div style={{ width: '550px' }} >
                 <h3 className='text-center font-bold text-blue-700 text-xl'>Investment vs revenue</h3>
 
-                <BarChart width={510} height={270} data={data}>
+                <BarChart width={500} height={260} data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="month" />
                     <YAxis />
@@ -100,7 +100,7 @@ const Dashboard = () => {
             <div style={{ width: '550px' }}>
                 <h3 className='text-center font-bold text-blue-700 text-xl'>Investment vs revenue</h3>
                 <br />
-                <PieChart width={530} height={270}>
+                <PieChart width={520} height={260}>
                     <Pie data={data} dataKey="investment" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
                     <Pie data={data} dataKey="revenue" nameKey="month" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
                     <Tooltip />
