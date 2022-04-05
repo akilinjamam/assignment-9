@@ -1,5 +1,18 @@
 # Getting Started with Create React App
 
+# project name: Watch Gallery
+
+## Live Site Link : https://grand-blini-756b51.netlify.app/
+
+# Bullet points:
+
+* at first, i have created a react app. then i installed tailwind css and react router. 
+* then started to create components one after one, home, reviews, dashbord,blogs, not found and about. set up router creating link. 
+* completed every component with giving tailwind css and plain css in the style attribute both.
+* at last i have installed recharts and set the charts in the dashboard section. i also push my code in the private git hub repo after every few minutes. and finally i deployed it in my netlify account.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
